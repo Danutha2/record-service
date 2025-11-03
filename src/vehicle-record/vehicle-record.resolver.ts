@@ -99,9 +99,9 @@ export class VehicleRecordResolver {
     }
   }
 
-  @ResolveField(() => Vehicle)
-  vehicle(@Parent() serviceRecord: ServiceRecord): any {
-    this.logger.log(`ResolveField: vehicle called for service record VIN: ${serviceRecord.vin}`);
-    return { __typename: 'Vehicle', vin: serviceRecord.vin };
-  }
+  // @ResolveField(() => Vehicle)
+  // vehicle(@Parent() serviceRecord: ServiceRecord): any {
+  //   this.logger.log(`ResolveField: vehicle called for service record VIN: ${serviceRecord.vin}`);
+  //   return { __typename: 'Vehicle', vin: serviceRecord.vin };
+  // }
 }
