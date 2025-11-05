@@ -12,7 +12,7 @@ export class VehicleResolver {
 
   @ResolveField(() => [ServiceRecord])
   public async serviceRecord(@Parent() vehicle: Vehicle): Promise<ServiceRecord[]> {
-    this.logger.log(`ResolveField: Fetching service records for Vehicle VIN: ${vehicle.vin}`);
+    this.logger.log(`VehicleResolveField: Fetching service records for Vehicle VIN: ${vehicle.vin}`);
 
     try {
       const records = await this.vehicleRecordService.findByVin(vehicle.vin);

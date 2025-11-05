@@ -17,7 +17,7 @@ scalar DateTime
 
 type Vehicle {
   vin: String!
-  serviceRecord: [ServiceRecord!]!
+  serviceRecord: [ServiceRecord!]
 }
 
 type Query {

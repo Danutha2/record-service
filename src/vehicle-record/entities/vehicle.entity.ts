@@ -9,8 +9,8 @@ export class Vehicle {
   @Directive('@external') 
   vin: string;
 
-  // @Field(() => [ServiceRecord],{nullable:true})
-  // serviceRecord: ServiceRecord[];
+  @Field(() => [ServiceRecord],{nullable:true})
+  serviceRecord: ServiceRecord[];
 
 
 }

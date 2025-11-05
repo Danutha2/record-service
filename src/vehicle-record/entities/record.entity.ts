@@ -25,6 +25,5 @@ export class ServiceRecord {
   @Field({ nullable: true })
   @Column({ type: 'varchar', length: 100, nullable: true })
   performed_by?: string;
-
- 
+  
 }
